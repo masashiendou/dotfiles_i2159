@@ -1,0 +1,20 @@
+# Insert your preferred key mappings here.
+unmapAll
+map <c-f> scrollFullPageDown
+map <c-b> scrollFullPageUp
+map k performFind
+map j performBackwardsFind
+map ec copyCurrentUrl
+map eh previousTab
+map es nextTab
+
+map eo removeTab
+
+map h goBack
+map s goForward
+
+map gg scrollToTop
+map G scrollToBottom
+
+map EH moveTabLeft
+map ES moveTabRight
