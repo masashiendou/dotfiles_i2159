@@ -1,0 +1,11 @@
+{
+	"tsserver.enableJavascript": true,
+	"eslint.filetypes": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"codeLens.enable": true,
+	"solargraph.useBundler": true
+}

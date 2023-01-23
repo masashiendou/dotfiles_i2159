@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app/controllers'
+let g:netrw_dirhist_6='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp'
+let g:netrw_dirhist_5='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app/controllers'
+let g:netrw_dirhist_4='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app'
+let g:netrw_dirhist_3='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp'
+let g:netrw_dirhist_2='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app'
+let g:netrw_dirhist_1='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app/controllers'
+let g:netrw_dirhist_0='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app/controllers/concerns'
+let g:netrw_dirhist_9='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app/controllers'
+let g:netrw_dirhist_8='/home/kanda/Project/RoR/tutorial/ror-tutorial-sampleapp/app'
