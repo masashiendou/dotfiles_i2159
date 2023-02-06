@@ -1,0 +1,1715 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>how to create multipule language web site at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="//duckduckgo.com/assets/logo_icon128.v101.png">
+  <link rel="image_src" href="//duckduckgo.com/assets/logo_homepage.normal.v101.png"/>
+
+  <style type="text/css">
+    html {
+      font-family: 'Helvetica Neue','Segoe UI', Arial, sans-serif;
+    }
+    .header {
+      font-size: 32px;
+      font-weight: bold;
+      color: #dc5e47;
+      height: 32px;
+      line-height: 32px;
+    }
+    .extra {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: 1.3em;
+    }
+    #end-spacer {
+      height: 10em;
+    }
+    body {
+      padding-left: 20px;
+      width: 90%;
+      margin-top: 0;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    th, td {
+      margin: 0;
+      padding: 0;
+      font-size: 107.1%;
+    }
+    
+    span.no-results {
+      font-size: 110%;
+    }
+    .query {
+      height: 28px;
+      border-color: #dc5e47;
+      border-style: solid solid solid solid;
+      border-width: 1px 1px 1px 1px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      font-size: 20px;
+      padding: 5px 6px;
+      text-align: left;
+      width: 55%; 
+      max-width: 600px;
+    }
+    .submit {
+      padding-left: 7px;
+      padding-right: 7px;
+      height: 40px;
+      font-size: 16px;
+    /*
+      color: white;
+      background-color: #019801;
+      border-style: none none none;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      padding: 5px 6px;
+    */
+      cursor: pointer;
+    }
+    .link-text {
+      color: #662200;
+      font-size: 77.4%;
+    }
+    .result-link {
+      font-size: 107.1%;
+    }
+    .result-snippet {
+      font-size: 77.4%;
+    }
+
+    .result-sponsored:hover {
+      background: #eae3ad !important;
+    }
+
+    .result-sponsored {
+      background: #fff7d0;
+      border: 1px solid #fef9eb !important;
+    }
+
+    .did-you-mean {
+      color: #EE4444;
+      font-size: 107.1%;
+    }
+    a {
+      text-decoration: none;
+      color: #1168CC;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6830BB;
+    }
+    .timestamp {
+      color:#555555;
+      font-size: 77.4%;
+    }
+    .navbutton {
+      background-color:transparent;
+      border: 0px none;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:bold;
+      text-decoration: underline;
+      color: #1168CC;
+      border-bottom: 1px solid transparent;
+      padding: 0px;
+    }
+
+    .results--powered {
+      color: #888;
+      display: inline;
+      margin-left: 10px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    .results--powered a {
+      color: #888;
+      font-size: 13px;
+    }
+    .results--powered__badge {
+      vertical-align: baseline;
+    }
+    .badge--yahoo {
+      background-image: url("//duckduckgo.com/assets/attribution/yahoo.v103.png");
+      background-size: 55px 13px;
+      width: 55px;
+      height: 13px;
+    }
+    .badge, .results--powered__badge {
+      text-indent: -999999px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    .next_form {
+      float: left;
+    }
+    .prev_form {
+      float: left;
+    }
+
+    .filters {
+      margin-top: 10px;
+    }
+
+    @media only screen and (max-device-width: 700px) {
+      body {
+        width: 95%;
+        margin-left: 10px;
+        padding: 0;
+      }
+      .query {
+        width: 180px;
+        font-size: 12px;
+      }
+      .submit {
+        font-size: 12px;
+      }
+    }
+
+
+    @media only screen and (max-device-width: 701px) and (orientation:landscape) 
+    {
+      .query {
+        width: 273px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+<p class='extra'>&nbsp;</p>
+<div class="header">DuckDuckGo</div>
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="how to create multipule language web site" >
+  <input class='submit' type="submit" value="Search" >
+    
+    
+    
+    
+
+<div class="filters">
+
+<select class="submit" name="kl">
+
+  <option value="" >All Regions</option>
+
+  <option value="ar-es" >Argentina</option>
+
+  <option value="au-en" >Australia</option>
+
+  <option value="at-de" >Austria</option>
+
+  <option value="be-fr" >Belgium (fr)</option>
+
+  <option value="be-nl" >Belgium (nl)</option>
+
+  <option value="br-pt" >Brazil</option>
+
+  <option value="bg-bg" >Bulgaria</option>
+
+  <option value="ca-en" >Canada (en)</option>
+
+  <option value="ca-fr" >Canada (fr)</option>
+
+  <option value="ct-ca" >Catalonia</option>
+
+  <option value="cl-es" >Chile</option>
+
+  <option value="cn-zh" >China</option>
+
+  <option value="co-es" >Colombia</option>
+
+  <option value="hr-hr" >Croatia</option>
+
+  <option value="cz-cs" >Czech Republic</option>
+
+  <option value="dk-da" >Denmark</option>
+
+  <option value="ee-et" >Estonia</option>
+
+  <option value="fi-fi" >Finland</option>
+
+  <option value="fr-fr" >France</option>
+
+  <option value="de-de" >Germany</option>
+
+  <option value="gr-el" >Greece</option>
+
+  <option value="hk-tzh" >Hong Kong</option>
+
+  <option value="hu-hu" >Hungary</option>
+
+  <option value="in-en" >India (en)</option>
+
+  <option value="id-en" >Indonesia (en)</option>
+
+  <option value="ie-en" >Ireland</option>
+
+  <option value="il-en" >Israel (en)</option>
+
+  <option value="it-it" >Italy</option>
+
+  <option value="jp-jp" >Japan</option>
+
+  <option value="kr-kr" >Korea</option>
+
+  <option value="lv-lv" >Latvia</option>
+
+  <option value="lt-lt" >Lithuania</option>
+
+  <option value="my-en" >Malaysia (en)</option>
+
+  <option value="mx-es" >Mexico</option>
+
+  <option value="nl-nl" >Netherlands</option>
+
+  <option value="nz-en" >New Zealand</option>
+
+  <option value="no-no" >Norway</option>
+
+  <option value="pk-en" >Pakistan (en)</option>
+
+  <option value="pe-es" >Peru</option>
+
+  <option value="ph-en" >Philippines (en)</option>
+
+  <option value="pl-pl" >Poland</option>
+
+  <option value="pt-pt" >Portugal</option>
+
+  <option value="ro-ro" >Romania</option>
+
+  <option value="ru-ru" >Russia</option>
+
+  <option value="xa-ar" >Saudi Arabia</option>
+
+  <option value="sg-en" >Singapore</option>
+
+  <option value="sk-sk" >Slovakia</option>
+
+  <option value="sl-sl" >Slovenia</option>
+
+  <option value="za-en" >South Africa</option>
+
+  <option value="es-ca" >Spain (ca)</option>
+
+  <option value="es-es" >Spain (es)</option>
+
+  <option value="se-sv" >Sweden</option>
+
+  <option value="ch-de" >Switzerland (de)</option>
+
+  <option value="ch-fr" >Switzerland (fr)</option>
+
+  <option value="tw-tzh" >Taiwan</option>
+
+  <option value="th-en" >Thailand (en)</option>
+
+  <option value="tr-tr" >Turkey</option>
+
+  <option value="us-en" >US (English)</option>
+
+  <option value="us-es" >US (Spanish)</option>
+
+  <option value="ua-uk" >Ukraine</option>
+
+  <option value="uk-en" >United Kingdom</option>
+
+  <option value="vn-en" >Vietnam (en)</option>
+
+</select>
+
+<select class="submit" name="df">
+
+  <option value="" selected>Any Time</option>
+
+  <option value="d" >Past Day</option>
+
+  <option value="w" >Past Week</option>
+
+  <option value="m" >Past Month</option>
+
+  <option value="y" >Past Year</option>
+
+</select>
+
+</form>
+
+
+  <p class="extra">&nbsp;</p>
+    <table border="0"><tr>
+    <td>
+      
+    </td>
+    <td>
+      
+        <form action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=how+to+create+multipule+language+web+site&amp;v=l&amp;l=us-en&amp;p=-1&amp;s=30&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=JP&amp;ss_mkt=us&amp;sp=0&amp;vqd=3-29409096976376053777608901134311106400-174062453726616269599070347267821958592&amp;dc=30&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="how to create multipule language web site">
+          <input type="hidden" name="s" value="30">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="30">
+          <input type="hidden" name="api" value="/d.js">
+          <input type="hidden" name="vqd" value="3-29409096976376053777608901134311106400-174062453726616269599070347267821958592">
+              
+              
+          
+          <input name="kl" value="wt-wt" type="hidden">
+              
+              
+              
+              
+        </form>
+      
+    </td>
+    </tr></table>
+
+
+
+
+<p class='extra'>&nbsp;</p>
+
+<table border="0">
+
+</table>
+
+<table border="0">
+
+<!-- Web results are present -->
+
+
+
+
+
+ <tr>
+
+    <td valign="top">1.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://translatepress.com/multi-language-website-tutorial-best-practices/" class='result-link'>Easily <b>Create</b> a Multi <b>Language</b> <b>Website</b> (<b>How</b> <b>to</b> + Best Practices)</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Want to <b>create</b> a multi <b>language</b> <b>website</b>? Read this post for a detailed step-by-step tutorial plus the best practices to make your <b>site</b> a success. We live in a multilingual world, so offering your <b>website</b> in multiple <b>languages</b> is a great way to make it more user-friendly and connect with new audiences.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>translatepress.com/multi-language-website-tutorial-best-practices/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">2.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://stackoverflow.com/questions/10533501/best-way-to-make-website-for-multiple-languages" class='result-link'>c# - Best way to make <b>website</b> for multiple <b>languages</b> - Stack Overflow</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Blog Article: <b>How</b> <b>to</b> <b>create</b> multilanguage <b>website</b> in Asp.net C#. I assure you that a <b>site</b> automatically translated does not support multiple <b>language</b>: the results from English to French are atrocious (an exemple I know well) and I would be surprised if it were different for other <b>languages</b>.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>stackoverflow.com/questions/10533501/best-way-to-make-website-for-multiple-languages</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">3.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.websitebuilderexpert.com/building-websites/how-to-build-a-multi-language-website/" class='result-link'><b>How</b> <b>to</b> Build a Multi <b>Language</b> <b>Website</b>: The Ultimate Guide</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Discover the Best Way to <b>Create</b> a Multilingual <b>Site</b>. If you&#x27;re reading this guide, it&#x27;s likely you already know <b>how</b> important a multi <b>language</b> <b>website</b> There are two main ways to build a multi <b>language</b> <b>website</b>, which we&#x27;ll walk you through in this guide. The first method is to use a <b>website</b> builder, while...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.websitebuilderexpert.com/building-websites/how-to-build-a-multi-language-website/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">4.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.wpbeginner.com/beginners-guide/how-to-easily-create-a-multilingual-wordpress-site/" class='result-link'><b>How</b> <b>to</b> Easily <b>Create</b> a Multilingual WordPress <b>Site</b></a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Do you want to translate your WordPress <b>site</b> in multiple <b>languages</b>? WordPress powers more than 35% of all <b>websites</b> on the internet. In this article, we will show you <b>how</b> <b>to</b> easily <b>create</b> a multilingual WordPress <b>site</b>. We will cover three different solutions, so you can choose the one that...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.wpbeginner.com/beginners-guide/how-to-easily-create-a-multilingual-wordpress-site/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">5.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://wordpress.com/support/set-up-a-multilingual-blog/" class='result-link'>Set Up a Multilingual <b>Site</b> - Support — WordPress.com</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Do you want to <b>create</b> a multilingual <b>website</b>? Here are three different ways you can set up your <b>site</b> if you have content in multiple <b>languages</b>. Watch the video below for a quick overview of <b>how</b> you can set up a multilingual <b>site</b>. Step by step instructions are available for each of the options, below the...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>wordpress.com/support/set-up-a-multilingual-blog/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">6.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.youtube.com/watch?v=cgvDMUrQ3vA" class='result-link'>PHP Multi <b>Language</b> <b>Website</b> Tutorial: <b>Create</b> Dynamic <b>Website</b> In 20...</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Both, <b>Web</b> Development and Passive Income are not easy, and it takes dedication and hard work, but if you In this tutorial you will learn: - about different techniques to <b>create</b> a multilanguage <b>website</b> - <b>how</b> <b>to</b> use PHP Arrays to <b>create</b> a dynamic <b>website</b> - <b>how</b> <b>to</b> implement 2+ different <b>languages</b> on...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.youtube.com/watch?v=cgvDMUrQ3vA</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">7.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://blog.weglot.com/9-tips-for-designing-a-multi-language-website/" class='result-link'>9 Tips for Designing a Multi <b>Language</b> <b>Website</b> | Weglot blog</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Many multi <b>language</b> <b>websites</b> will detect the native <b>language</b> of the <b>web</b> browser to automatically set the primary <b>language</b> for users. If you don&#x27;t already have a Weglot account, you&#x27;ll need to <b>create</b> one to get your API key. Once you save your changes, refresh the front-end of your new multi...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>blog.weglot.com/9-tips-for-designing-a-multi-language-website/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">8.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://codepedia.info/multiple-languages-website-asp-net-c/" class='result-link'>16 comments on &quot;<b>How</b> <b>to</b> <b>Create</b> Multiple <b>Language</b> <b>Website</b> in...&quot;</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Create</b> multiple <b>language</b> <b>websites</b> in Asp.net, <b>Website</b> which can support Multiple <b>Language</b> Asp.net c#, Change according to the culture of specific For those of you who have to develop multi-lingual interfaces and applications, you&#x27;ll be glad to know that ASP.NET makes things easier.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>codepedia.info/multiple-languages-website-asp-net-c/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">9.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://helpcenter.qodeinteractive.com/hc/en-us/articles/360002308217-How-To-Create-A-Multi-Language-Website" class='result-link'><b>How</b> <b>To</b> <b>Create</b> A Multi-<b>Language</b> <b>Website</b> - Qode Help Center</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      In order to <b>create</b> a <b>website</b> available in multiple <b>languages</b>, you do not need to <b>create</b> a separate WordPress installation for each of the <b>languages</b> you wish to feature. There&#x27;s a much more straightforward solution, and all you should do is use the right plugin for this. WPML plugin is the most...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>helpcenter.qodeinteractive.com/hc/en-us/articles/360002308217-How-To-Create-A-Multi-Language-Website</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">10.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.wealthydragon.com/create-a-dual-language-website/" class='result-link'><b>How</b> <b>to</b> <b>Create</b> a Multiple <b>Language</b> HTML <b>Website</b></a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Most <b>websites</b> these days are based on Content Management Systems and, of those, WordPress is by far the most widely used. If you&#x27;re using WordPress, there are a number of plugins that handle dual <b>language</b> translations. I&#x27;ve described <b>how</b> I translate WordPress <b>websites</b> with the plugin that I use.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.wealthydragon.com/create-a-dual-language-website/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">11.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://wpastra.com/creating-multilingual-websites/" class='result-link'>Everything You Need to Know to <b>Create</b> a Multilingual WordPress...</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Welcome, willkommen, or bienvenido to the ultimate guide to translating your <b>website</b> into multiple <b>languages</b>. In this article, you&#x27;ll learn about the different translation options and plugins for your WordPress <b>site</b>, and <b>how</b> <b>to</b> use those tools to set up a multilingual <b>website</b>.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>wpastra.com/creating-multilingual-websites/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">12.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.jimdo.com/blog/how-to-build-a-multilingual-website/" class='result-link'>Creating Multiple <b>Websites</b> | Jimdo</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      See examples of bilingual <b>sites</b> made with Jimdo, and learn <b>how</b> you can make one too! I&#x27;ll also show examples of multilingual Jimdo <b>websites</b> that have that certain je ne sais quoi: they&#x27;ve created clear, functional, and beautiful looking <b>websites</b> in multiple <b>languages</b>!
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.jimdo.com/blog/how-to-build-a-multilingual-website/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">13.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://dev.to/cecilelebleu/help-how-to-make-a-multilanguage-website-3llc" class='result-link'>Help: <b>How</b> <b>to</b> make a multilanguage <b>website</b>? - DEV</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      I&#x27;m building a <b>website</b> the simple way — HTML, CSS, and vanilla JavaScript, that&#x27;s it. I&#x27;m trying to keep it as light and simple as I can. It&#x27;s looking pretty good so far, but everything is in English and I will eventually need to add translations, mainly Spanish in the very near future...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>dev.to/cecilelebleu/help-how-to-make-a-multilanguage-website-3llc</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">14.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.codeproject.com/Questions/541807/Createplusapluswebplussitepluswithplusmultipleplus" class='result-link'><b>Create</b> a <b>web</b> <b>site</b> with multiple <b>language</b> support with HTML5</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      I have a <b>web</b> <b>site</b> which is in English <b>language</b> and it is a HTML <b>site</b>. Is there any way to add multiple <b>language</b> <b>How</b> <b>to</b> <b>create</b> <b>site</b> with multiple <b>language</b> support?? Please suggest. You can go ahead with the links below: Creating multilingual <b>websites</b> - Part 1[^] Creating multilingual <b>websites</b>...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.codeproject.com/Questions/541807/Createplusapluswebplussitepluswithplusmultipleplus</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">15.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.lionbridge.com/blog/translation-localization/9-essential-elements-intelligent-multilingual-website-design/" class='result-link'><b>How</b> <b>to</b> <b>Create</b> a Multilingual <b>Website</b> Design: 9 Best Practices With...</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>How</b> will you differentiate yourself from the crowd in providing an exceptional global UX? <b>How</b>? Through effortless navigation, useful functionality, and intelligent multilingual <b>website</b> design that enables What about countries with multiple <b>languages</b>? Or countries that share a <b>language</b>?
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.lionbridge.com/blog/translation-localization/9-essential-elements-intelligent-multilingual-website-design/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">16.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://support.google.com/sites/thread/7402273?hl=en" class='result-link'><b>How</b> <b>to</b> <b>create</b> a multilingual <b>website</b> - <b>Sites</b> Community</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Learn <b>how</b> <b>to</b> convert your <b>sites</b> from classic <b>Sites</b> <b>to</b> new <b>Sites</b>. I am currently creating a new webpage with Google <b>Sites</b> in Spanish, but I would like to be able to use it in more <b>languages</b>, at least English.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>support.google.com/sites/thread/7402273?hl=en</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">17.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://support.microsoft.com/en-us/office/create-multilingual-communication-sites-pages-and-news-2bb7d610-5453-41c6-a0e8-6f40b3ed750c" class='result-link'><b>Create</b> multilingual communication <b>sites</b>, pages, and news</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>To</b> <b>create</b> pages on communications <b>sites</b> in different <b>languages</b>, you can use the translation feature to make copies of pages created in your default <b>language</b>. The copies can then be manually translated. Published translation pages are automatically shown in the appropriate <b>language</b> <b>site</b>...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>support.microsoft.com/en-us/office/create-multilingual-communication-sites-pages-and-news-2bb7d610-5453-41c6-a0e8-6f40b3ed750c</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">18.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.isitwp.com/easily-create-multilingual-wordpress-website/" class='result-link'><b>How</b> <b>to</b> Easily <b>Create</b> a Multilingual WordPress <b>Website</b> (Step by Step)</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Want to <b>create</b> a multilingual <b>site</b> &amp; engage a much wider audience? Read our simple guide on <b>how</b> <b>to</b> easily One option is to <b>create</b> multiple subdomains for your <b>site</b> and install one <b>language</b> for each of the Once you know <b>how</b> <b>to</b> <b>create</b> a multilingual <b>website</b>, you can reach out to a larger user base.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.isitwp.com/easily-create-multilingual-wordpress-website/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">19.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://webflow.com/blog/multilingual-website" class='result-link'><b>How</b> <b>to</b> <b>create</b> a multilingual <b>website</b> in Webflow | Webflow Blog</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Discover <b>how</b> <b>to</b> easily <b>create</b> a multilingual Webflow <b>website</b>, with SEO in mind, in just a few minutes — without writing code. A translated <b>website</b> is especially important for businesses selling goods or services online. A full 75% of people surveyed about why <b>language</b> matters on global <b>websites</b>...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>webflow.com/blog/multilingual-website</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">20.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://kinsta.com/blog/wordpress-multilingual/" class='result-link'>Ultimate WordPress Multilingual Guide - <b>How</b> We Launched 10...</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Setting up a WordPress multilingual <b>site</b> can confusing. Check out our in-depth guide and <b>how</b> we launched 10 <b>languages</b> <b>to</b> increase <b>website</b> Let&#x27;s first start out by saying, setting up a WordPress multilingual <b>site</b> can be very confusing! Even for seasoned WordPress developers and users, there...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>kinsta.com/blog/wordpress-multilingual/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">21.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://support.wix.com/en/article/adding-languages-to-your-multilingual-site" class='result-link'>Adding <b>Languages</b> <b>to</b> Your Multilingual <b>Site</b> | Help Center | Wix.com</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      You can translate your <b>site</b> into one <b>language</b> or into multiple <b>languages</b>. You can add additional <b>languages</b> at any time. To add a <b>language</b>: Click Promote your business, showcase your art, set up an online shop or just test out new ideas. The Wix <b>website</b> builder has everything you need to <b>create</b>...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>support.wix.com/en/article/adding-languages-to-your-multilingual-site</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">22.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://knowledge.hubspot.com/blog/create-a-multi-language-blog" class='result-link'><b>Create</b> a multi-<b>language</b> blog | <b>Create</b> blog tags in multiple <b>languages</b></a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Learn <b>how</b> <b>to</b> <b>create</b> multi-<b>language</b> variations of a blog in HubSpot. We use cookies to make HubSpot&#x27;s <b>website</b> a better place. Cookies help to provide a more personalized experience and relevant advertising for you, and <b>web</b> analytics for us.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>knowledge.hubspot.com/blog/create-a-multi-language-blog</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">23.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.entrepreneur.com/article/224742" class='result-link'><b>How</b> <b>to</b> <b>Create</b> a Multilingual <b>Website</b></a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Q: <b>How</b> can I <b>create</b> multilingual <b>websites</b> <b>to</b> attract international customers? A: Tackling the world, are we? Good for you. Do I have to build entirely new <b>websites</b> for each <b>language</b>? Sort of, but replicating your current <b>site</b> in multiple <b>languages</b> shouldn&#x27;t involve rebuilding its back end.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.entrepreneur.com/article/224742</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">24.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.finalsite.com/blog/p/~board/b/post/multi-language-websites-international-school-examples" class='result-link'>Multi-<b>Language</b> <b>Websites</b>: Examples and Best Practices from...</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Having your school <b>website</b> in multiple <b>languages</b> can be critical. Take a look at <b>how</b> these schools created bilingual and multilingual <b>websites</b>. <b>How</b> does your <b>website&#x27;s</b> design, UX, and search performance compare to industry expectations and standards?
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.finalsite.com/blog/p/~board/b/post/multi-language-websites-international-school-examples</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">25.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://premium.wpmudev.org/blog/multilingual-wordpress-site-multisite/" class='result-link'>The No-Plugin Guide for a Multilingual WordPress <b>Site</b> Using Multisite</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Learn <b>how</b> <b>to</b> <b>create</b> your own multilingual WordPress <b>site</b> from scratch! <b>Create</b>, tweak, and present your translated content however you want. If you want to <b>create</b> a menu that contains multiple <b>languages</b>, <b>create</b> a new menu, and add multiple custom links with the various <b>language</b> subdomains.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>premium.wpmudev.org/blog/multilingual-wordpress-site-multisite/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">26.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://managewp.com/blog/create-multilingual-wordpress-site" class='result-link'><b>How</b> <b>to</b> <b>Create</b> a Multilingual WordPress <b>Site</b> - ManageWP</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Multisite is intended for creating a network of <b>sites</b> and blogs with multiple users who have a variety of roles on the <b>site</b>. A multi-<b>language</b> plugin will provide you with a means to reproduce your content in another <b>language</b> I think <b>create</b> a <b>website</b> with WordPress. This <b>site</b> will be english and spanish too.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>managewp.com/blog/create-multilingual-wordpress-site</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">27.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.TemplateMonster.com/services/multi-language-website/" class='result-link'>Multi <b>Language</b> <b>Website</b> Services | <b>How</b> it Works</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Offering multiple <b>languages</b> gives you a lot of freedom in <b>how</b> you work with your audience. And you will be able to understand and react to the needs of Along with the installation of a needed plugin, we will add new <b>languages</b> <b>to</b> your <b>site</b>. Plus, we will <b>create</b> and show a <b>language</b> switcher to allow your...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.TemplateMonster.com/services/multi-language-website/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">28.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://www.quora.com/How-can-I-serve-a-page-with-content-in-multiple-languages?share=1" class='result-link'><b>How</b> <b>to</b> serve a page with content in multiple <b>languages</b> - Quora</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Voog (<b>web</b> search for it), is a <b>web</b> builder that has functionality that is (admittedly) targeted more towards developers, as to get the best Here: <b>How</b> <b>to</b> add Google Translate to your <b>website</b>. If you are on WordPress and need a guide on adding multiple <b>languages</b> with Polylang, then you&#x27;ll find this...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.quora.com/How-can-I-serve-a-page-with-content-in-multiple-languages?share=1</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">29.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="https://translatorstudio.co.uk/multilingual-websites-single-multiple-domains/" class='result-link'>Multilingual <b>websites</b>: single or multiple domains?</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      This is <b>how</b> it worked from the user perspective: I would <b>create</b> a page or blog post in the base <b>language</b>, which was Spanish. Translation for multilingual <b>websites</b> with multiple domains. For the reasons I&#x27;ve described, when I You can <b>create</b> whatever content you want in each of the <b>languages</b>.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>translatorstudio.co.uk/multilingual-websites-single-multiple-domains/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+    <td colspan=2>
+      
+      
+        <form class="next_form" action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=how+to+create+multipule+language+web+site&amp;v=l&amp;l=us-en&amp;p=-1&amp;s=30&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=JP&amp;ss_mkt=us&amp;sp=0&amp;vqd=3-29409096976376053777608901134311106400-174062453726616269599070347267821958592&amp;dc=30&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="how to create multipule language web site">
+          <input type="hidden" name="s" value="30">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="30">
+          <input type="hidden" name="api" value="/d.js">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                
+          
+          <input name="kl" value="wt-wt" type="hidden">
+                
+              
+                
+                
+        </form>
+      
+      
+    </td>
+  </tr>
+
+</table>
+
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="how to create multipule language web site" >
+  <input class='submit' type="submit" value="Search" >
+    
+    
+    
+    
+
+
+  <input name="kl" value="wt-wt" type="hidden">
+    
+    
+</form>
+
+<p class='extra'>&nbsp;</p>
+
+<!--
+<a href="#top">Top</a>
+//-->
+
+
+  <img src="//duckduckgo.com/t/sl_l"/>
+
+<div id='end-spacer'>&nbsp;</div>
+
+
+
+</body>
+</html>
